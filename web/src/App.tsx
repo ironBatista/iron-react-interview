@@ -1,15 +1,8 @@
 import "./App.css";
-import { GetActivities } from "./hooks/GetActivities";
+import Dashboard from "./layouts/dashboard/Dashboard";
 
 const App = () => {
-  const { data, error, loaded } = GetActivities(10);
-  
-  if (loaded) {
-    console.log(data);
-    return <p>FINE!!</p>;
-  }
-
-  return <span>Loading...</span>;
+  return <Dashboard></Dashboard>;
 };
 
 export default App;
